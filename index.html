@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PluviApp - Solução contra Enchentes</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1><img src="img/imagem da logo PluviAPP.png" style="width: 60px; height: 50px;" alt="Imagem da logo PluviApp" /> PluviApp</h1>
+      <div class="theme-icons">
+        <i class="fas fa-sun" data-theme="light" title="Tema Claro"></i>
+        <i class="fas fa-moon" data-theme="dark" title="Tema Escuro"></i>
+        <i class="fas fa-tint" data-theme="blue" title="Tema Azul"></i>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="slideshow-container">
+      <button class="prev">&#10094;</button>
+  
+      <img src="img/Alerta de enchente PluviApp.png" alt="Imagem 1 sobre enchentes" class="slide" />
+      <img src="img/Sensor de enchente.jpg" alt="Imagem 2 sobre sensores" class="slide hidden" />
+      <img src="img/Celular 2.0.png" alt="Imagem 3 de alerta da PluviApp" class="slide hidden" />
+
+      <button class="next">&#10095;</button>
+</div>
+
+
+    <section id="formulario">
+      <h2>Receba Alertas da PluviApp</h2>
+      <form id="alertForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required />
+
+        <button type="submit">Cadastrar</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+
+    <section id="quiz">
+      <h2>Quiz - Você sabe como se proteger?</h2>
+      <div id="quiz-container"></div>
+      <button id="submit-quiz">Ver Resultado</button>
+      <p id="quiz-result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PluviApp - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
